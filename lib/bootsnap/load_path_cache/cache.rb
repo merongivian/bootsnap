@@ -205,7 +205,7 @@ module Bootsnap
         else
           def try_index(f)
             if (p = @index[f])
-              -File.join(p, f).untaint
+              -File.join(p, f)
             end
           end
         end
